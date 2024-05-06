@@ -29,15 +29,18 @@ main{
     max-width: 375px;
 }
 .card{
+    cursor: pointer;
     background-color: var(--White);
     border-radius: 18px;
     padding:20px;
     text-align: center;
     border: 2px solid var(--Black);
     box-shadow: 6px 7px 1px var(--Black);
+    transition: all .3s ease-out;
 }
 .card:hover, .card:active{
     box-shadow: 12px 10px 1px var(--Black);
+    transform: scale(.9);
 }
 .card:hover  .content h1, .card:active .content h1{
     color: var(--Yellow);
